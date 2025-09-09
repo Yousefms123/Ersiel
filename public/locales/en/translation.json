@@ -1,0 +1,109 @@
+{
+	"navbar": {
+		"menu": "Menu",
+		"Ersiel": "Ersiel",
+		"Ersiel.Motors": "Ersiel.Motors",
+		"Ersiel.Beauty": "Ersiel.Beauty",
+		"Ersiel.Derma": "Ersiel.Derma"
+	},
+	"hero": {
+		"slides": [
+			{
+				"title": "Ersiel Beauty",
+				"desc": "Discover a world of beauty where confidence blossoms, elegance radiates, and individuality shines.",
+				"button": "Contact Us"
+			},
+			{
+				"title": "Ersiel Derma",
+				"desc": "Discover a world of beauty where confidence blossoms, elegance radiates, and individuality shines.",
+				"button": "Contact Us"
+			},
+			{
+				"title": "Ersiel Motors",
+				"desc": "Discover a world of beauty where confidence blossoms, elegance radiates, and individuality shines.",
+				"button": "Contact Us"
+			}
+		]
+	},
+	"servicesHero": {
+		"motorsHero": {
+			"title": "Ersiel Motors",
+			"desc": "Exporting world-class automobiles with a focus on quality, elegance, and trust.",
+			"button": "Get in Touch"
+		},
+		"beautyHero": {
+			"title": "Ersiel Beauty",
+			"desc": "premium makeup and skincare products crafted to highlight your natural glow.",
+			"button": "Get in Touch"
+		},
+		"dermaHero": {
+			"title": "Ersiel Derma",
+			"desc": "Exporting world-class automobiles with a focus on quality, elegance, and trust.",
+			"button": "Get in Touch"
+		}
+	},
+	"aboutUs": {
+		"title": "About Us",
+		"content": "ERSIEL embodies our vision of delivering the best from South Korea to the world, and each letter of our name represents a value we believe in and promise to our partners.",
+		"values": [
+			{ "label": "Excellence", "text": "Supplying only top-quality products." },
+			{ "label": "Reliability", "text": "Shipments and services customers can always trust." },
+			{ "label": "Spirit", "text": "The passion and dedication of our team driving success." },
+			{ "label": "Integrity", "text": "Honest and transparent business practices." },
+			{ "label": "Expansion", "text": "Opening new markets and growing opportunities worldwide." },
+			{ "label": "Leadership", "text": "Leading the way in global exports." }
+		],
+		"closing": "ERSIEL moves forward with your trust."
+	},
+	"ourTeam": {
+		"title": "Our Team",
+		"cards": [
+			{
+				"title": "Global Leadership",
+				"desc": "Our team unites Korean and international leaders with global expertise."
+			},
+			{
+				"title": "Decades of Experience",
+				"desc": "Each member brings over 10 years of professional experience."
+			},
+			{
+				"title": "Diverse Expertise",
+				"desc": "Expertise covers trade, finance, operations, and cultural development."
+			},
+			{
+				"title": "Proven Excellence",
+				"desc": "Known for delivering complex projects with precision and impact."
+			}
+		]
+	},
+	"aboutCeo": {
+		"title": "About CEO",
+		"content": "Nermeen began her journey in South Korea on a government scholarship and became the only foreign student at Korea University of Technology and Education to earn a Bachelor’s degree in Electronic Engineering. At 19, she mastered the Korean language and excelled in a highly competitive environment, recognized as a resilient, disciplined, and ambitious individual. Her career spans robotic operations engineering, fintech, exports, and business development, combining technical expertise with global business vision. Now, as CEO of ERSIEL, Nermeen leads with a global mindset, uniting engineering excellence with international business ambition."
+	},
+	"cta": {
+		"title": "Let's Talk on WhatsApp",
+		"button": "Contact Us"
+	},
+	"footer": {
+		"links": {
+			"title": "Links",
+			"items": [
+				{ "text": "Ersiel", "link": "/" },
+				{ "text": "Ersiel.Motors", "link": "/ersiel_motors" },
+				{ "text": "Ersiel.Beauty", "link": "/ersiel_beauty" },
+				{ "text": "Ersiel.Derma", "link": "/ersiel_derma" }
+			]
+		},
+		"contact": {
+			"title": "Contact Us",
+			"email": "nermeenersiel@gmail.com",
+			"phone": "+970567319195"
+		},
+		"location": {
+			"title": "Location",
+			"hq": "Korea - mmmmm - qqqq",
+			"yemen": "Yamen - kkkkk - wwww"
+		},
+		"copyright": "Copyright "
+	}
+}
