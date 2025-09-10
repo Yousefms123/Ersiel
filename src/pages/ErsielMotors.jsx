@@ -252,7 +252,7 @@ const ErsielMotors = () => {
 									transition={{
 										duration: 0.2,
 										ease: "easeOut",
-										delay: index * 0.2, // ✨ يخلي كل كارد يطلع بعد اللي قبله
+										delay: index * 0.08, // ✨ يخلي كل كارد يطلع بعد اللي قبله
 									}}
 									viewport={{ once: true }}
 								>
@@ -322,7 +322,7 @@ const ErsielMotors = () => {
 									transition={{
 										duration: 0.2,
 										ease: "easeOut",
-										delay: index * 0.2, // ✨ يخلي كل كارد يطلع بعد اللي قبله
+										delay: index * 0.08, // ✨ يخلي كل كارد يطلع بعد اللي قبله
 									}}
 									viewport={{ once: true }}
 								>
@@ -392,7 +392,7 @@ const ErsielMotors = () => {
 									transition={{
 										duration: 0.2,
 										ease: "easeOut",
-										delay: index * 0.2, // ✨ يخلي كل كارد يطلع بعد اللي قبله
+										delay: index * 0.08, // ✨ يخلي كل كارد يطلع بعد اللي قبله
 									}}
 									viewport={{ once: true }}
 								>

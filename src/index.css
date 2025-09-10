@@ -7,7 +7,38 @@
 	--color-button: #161616;
 	--font-Raleway: "Raleway", sans-serif;
 	--font-Tajawal: "Tajawal", "Poppins", sans-serif;
-	--color-span: #828E8E;
+	--color-span: #828e8e;
+}
+@layer utilities {
+	.marquee-container {
+		/* الحركة الافتراضية (LTR) */
+		animation: marquee-ltr 40s linear infinite;
+	}
+
+	/* عندما يكون اتجاه الصفحة RTL */
+	[dir="rtl"] .marquee-container {
+		/* استخدم الحركة المعكوسة */
+		animation-name: marquee-rtl;
+	}
+
+	/* تعريف الحركات (Keyframes) */
+	@keyframes marquee-ltr {
+		from {
+			transform: translateX(0%);
+		}
+		to {
+			transform: translateX(-100%);
+		}
+	}
+
+	@keyframes marquee-rtl {
+		from {
+			transform: translateX(0%);
+		}
+		to {
+			transform: translateX(100%);
+		}
+	}
 }
 [dir="rtl"] body,
 [dir="rtl"] body * {
@@ -18,12 +49,42 @@
 }
 
 .slick-dots li button:before {
-	font-size: 1.5rem;
+	font-size: 24px !important;
 	color: white !important;
 	opacity: 0.75;
 }
 
 .slick-dots li.slick-active button:before {
-	color: var(--color-button) !important;
+	color: rgb(82, 82, 82) !important;
 	opacity: 1 !important;
+}
+
+.marquee-container {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	box-sizing: border-box; /* يضمن أن الـ padding والـ border لا تؤثر على العرض */
+	padding: 10px; /* مثال: إضافة حشوة داخلية */
+}
+
+.marquee-content {
+	width: 200%; /* اجعل عرض المحتوى ضعف عرض الحاوية */
+	display: inline-block;
+
+	/* تطبيق الأنيميشن */
+	animation: marquee 15s linear infinite;
+}
+
+.marquee-content:hover {
+	animation-play-state: paused;
+}
+
+/* لا تغيير هنا */
+@keyframes marquee {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
 }
