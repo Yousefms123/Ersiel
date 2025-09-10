@@ -62,7 +62,7 @@ export default function HeroVedioDialog({
 			whileInView={{ scale: 1, opacity: 1 }}
 			viewport={{ once: true, amount: 0.3 }}
 			transition={{ duration: 0.6, ease: "easeOut" }}
-			className="mt-20 mx-auto w-full "
+			className=" my-8 md:my-20 mx-auto w-full "
 		>
 			<button
 				type="button"

@@ -80,7 +80,7 @@ const Footer = () => {
 
 	return (
 		<motion.footer
-			className="bg-white px-2 md:px-28 border-t-2 border-gray-200 font-Tajawal overflow-hidden"
+			className="bg-white px-2 md:px-28 border-t-2 border-gray-200 font-Tajawal overflow-hidden mt-10 md:mt-16"
 			initial="hidden"
 			whileInView="visible"
 			viewport={{ once: true, margin: "-100px" }}

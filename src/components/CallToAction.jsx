@@ -28,11 +28,11 @@ const CallToAction = () => {
 		>
 			<motion.div
 				variants={containerVariants}
-				className="relative max-w-7xl px-6 my-10 md:my-16 flex flex-col items-center justify-center bg-white rounded-lg border border-gray-200 p-8 shadow-sm overflow-hidden  mx-auto"
+				className="relative max-w-7xl px-6 md:my-10 flex flex-col items-center justify-center bg-white rounded-lg border border-gray-200 p-8 shadow-sm overflow-hidden  mx-auto"
 			>
 				{/* رقم الهاتف */}
 				<motion.p
-					className="text-gray-500 text-lg mb-2 z-[2]"
+					className="text-gray-500 text-sm md:text-lg mb-2 z-[2]"
 					initial={{ opacity: 0, y: 10 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 0.2 }}
@@ -42,7 +42,7 @@ const CallToAction = () => {
 
 				{/* النص */}
 				<motion.h2
-					className="text-xl md:text-4xl font-semibold text-center mb-4 z-[2]  max-w-[14ch]"
+					className="text-lg md:text-4xl font-semibold text-center mb-4 z-[2]  md:max-w-[14ch]"
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 0.35 }}
@@ -55,7 +55,7 @@ const CallToAction = () => {
 					href="https://wa.me/970567319195"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="flex items-center gap-2 bg-green-700 text-white px-6 py-3 rounded-md hover:bg-green-600 transition z-[2]"
+					className="flex items-center gap-2 text-xs sm:text-sm md:text-lg bg-green-700 text-white px-6 py-3 rounded-md hover:bg-green-600 transition z-[2]"
 					initial={{ opacity: 0, scale: 0.95 }}
 					animate={{ opacity: 1, scale: 1 }}
 					transition={{ delay: 0.5 }}

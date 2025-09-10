@@ -11,6 +11,9 @@ import MotorsHero from "../assets/MotorsHero.png";
 import { useTranslation } from "react-i18next";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
+
+
+
 import { motion } from "motion/react";
 
 export default function HeroSection({ isRTL }) {
@@ -18,9 +21,8 @@ export default function HeroSection({ isRTL }) {
 	const translatedSlides = t("hero.slides", { returnObjects: true });
 
 	const heroData = [
-		{ image: BeautyHero, sideImage: BeautyImg, ...translatedSlides[0] },
-		{ image: DermaHero, sideImage: DermaImg, ...translatedSlides[1] },
 		{ image: MotorsHero, sideImage: null, ...translatedSlides[2] },
+		{ image: BeautyHero, sideImage: DermaImg, ...translatedSlides[0] },
 	];
 
 	const settings = {
