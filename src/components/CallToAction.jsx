@@ -2,7 +2,12 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { BsWhatsapp } from "react-icons/bs";
 import { motion } from "motion/react";
-
+import { Mail, Phone, Printer } from "lucide-react";
+const contactLink = [
+	{ icon: Mail, text: "eng.nermeen@ersiel.com" },
+	{ icon: Phone, text: "+821096277360" },
+	{ icon: Printer, text: "0508-9603-7360" },
+];
 const containerVariants = {
 	hidden: { opacity: 0, y: 40 },
 	visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
@@ -25,27 +30,41 @@ const CallToAction = () => {
 				variants={containerVariants}
 				className="relative max-w-7xl px-6 md:my-10 flex flex-col items-center justify-center bg-white rounded-lg border border-gray-200 p-8 shadow-sm overflow-hidden  mx-auto"
 			>
-				{/* رقم الهاتف */}
-				<motion.p
-					className="text-gray-500 text-sm md:text-lg mb-2 z-[2]"
-					initial={{ opacity: 0, y: 10 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ delay: 0.2 }}
-				>
-					+970567319195
-				</motion.p>
-
-				{/* النص */}
-				<motion.h2
-					className="text-lg md:text-4xl font-semibold text-center mb-4 z-[2]  md:max-w-[14ch]"
+				<motion.div
+					className=" md:text-4xl font-semibold text-center mb-4 z-[2]"
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 0.35 }}
 				>
-					{t("cta.title")}
-				</motion.h2>
+					<motion.h1
+						initial={{ opacity: 0, y: 40 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.7, ease: "easeOut" }}
+						viewport={{ once: true }}
+						className="text-button text-2xl sm:text-3xl md:text-4xl font-bold  max-w-[20ch]"
+					>
+						{t("cta.button")}
+					</motion.h1>
+				</motion.div>
+				<motion.div className="z-[99] my-3 mb-10 flex flex-col md:flex-row gap-y-2 w-3xl items-center justify-between ">
+					{contactLink.map((link, index) => (
+						<motion.span
+							key={index}
+							initial={{ opacity: 0, y: 40 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{
+								duration: 0.5,
+								ease: "easeOut",
+								delay: index * 0.08, // ✨ يخلي كل كارد يطلع بعد اللي قبله
+							}}
+							viewport={{ once: true }}
+							className="flex items-center gap-x-1 text-sm md:text-lg text-button/75"
+						>
+							{link.icon && <link.icon className="w-4 h-4 md:w-6 md:h-6" />} {link.text}{" "}
+						</motion.span>
+					))}
+				</motion.div>
 
-				{/* زر واتساب */}
 				<motion.a
 					href="https://wa.me/821096277360"
 					target="_blank"

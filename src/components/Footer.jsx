@@ -7,7 +7,7 @@ import { RiTiktokLine } from "react-icons/ri";
 import { FaSnapchat } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io5";
 
-import { Mail, MapPin, Printer } from "lucide-react";
+import { Mail, MapPin, Phone, Printer } from "lucide-react";
 import Logo from "../assets/Logo.svg";
 import { useTranslation } from "react-i18next";
 
@@ -22,15 +22,16 @@ const Footer = () => {
 		{ icon: FaSnapchat, link: "https://snapchat.com/t/Ufdg4K4a" },
 		{
 			icon: IoLogoInstagram,
-			link: "https://www.instagram.com/ersiel.beauty?igsh=MThpam5ib2o0bmZxdA%3D%3D&utm_source=qr",
+			link: "https://www.instagram.com/ersiel.motors?igsh=MTM3OHhyemlqbnVv&utm_source=qr",
 		},
 		{ icon: RiTiktokLine, link: "https://www.tiktok.com/@ersiel.motors?_t=ZS-8zd2YhxVjdA&_r=1" },
 		{ icon: FaWhatsapp, link: "https://wa.me/821096277360" },
 	];
 
 	const contactLink = [
-		{ icon: Mail, text: "Eng.Nermeen@ersiel.com" },
+		{ icon: Mail, text: "eng.nermeen@ersiel.com" },
 		{ icon: Printer, text: "0508-9603-7360" },
+		{ icon: Phone, text: "+821096277360" },
 	];
 
 	const locationLink = [
