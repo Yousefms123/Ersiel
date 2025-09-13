@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
-import { FiFacebook } from "react-icons/fi";
-import { FaXTwitter, FaSnapchat } from "react-icons/fa6";
+import { RiTiktokLine } from "react-icons/ri";
+
+import { FaSnapchat } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io5";
-import { CiMail } from "react-icons/ci";
-import { PiPhoneCall } from "react-icons/pi";
-import { MapPin } from "lucide-react";
+
+import { Mail, MapPin, Printer } from "lucide-react";
 import Logo from "../assets/Logo.svg";
 import { useTranslation } from "react-i18next";
 
@@ -19,21 +19,22 @@ const Footer = () => {
 	const location = t("footer.location", { returnObjects: true });
 
 	const social = [
-		{ icon: FaSnapchat, link: "/", color: "hover:bg-yellow-400" },
-		{ icon: IoLogoInstagram, link: "/", color: "hover:bg-pink-500" },
-		{ icon: FaXTwitter, link: "/", color: "hover:bg-black" },
-		{ icon: FiFacebook, link: "/", color: "hover:bg-blue-600" },
-		{ icon: FaWhatsapp, link: "/", color: "hover:bg-green-500" },
+		{ icon: FaSnapchat, link: "https://snapchat.com/t/Ufdg4K4a" },
+		{
+			icon: IoLogoInstagram,
+			link: "https://www.instagram.com/ersiel.beauty?igsh=MThpam5ib2o0bmZxdA%3D%3D&utm_source=qr",
+		},
+		{ icon: RiTiktokLine, link: "https://www.tiktok.com/@ersiel.motors?_t=ZS-8zd2YhxVjdA&_r=1" },
+		{ icon: FaWhatsapp, link: "https://wa.me/821096277360" },
 	];
 
 	const contactLink = [
-		{ icon: CiMail, text: contact.email },
-		{ icon: PiPhoneCall, text: contact.phone },
+		{ icon: Mail, text: "Eng.Nermeen@ersiel.com" },
+		{ icon: Printer, text: "0508-9603-7360" },
 	];
 
 	const locationLink = [
-		{ icon: <MapPin />, text: location.hq, link: "https://maps.app.goo.gl/yvgEzWaWq6eLbARW8" },
-		{ icon: <MapPin />, text: location.yemen, link: "https://maps.app.goo.gl/RpvYoS55tPbWjQNV8" },
+		{ icon: <MapPin />, text: location.Korea, link: "https://maps.app.goo.gl/SLvCMc7LpJCdg6Y99" },
 	];
 
 	// Animation variants
@@ -89,7 +90,7 @@ const Footer = () => {
 			<div className="flex flex-col justify-between">
 				{/* Header Section with Logo and Social Media */}
 				<motion.div
-					className="flex items-center gap-x-5 sm:justify-between lg:px-8 border-b-2 border-gray-200"
+					className="flex items-center px-4 gap-x-5 sm:justify-between lg:px-8 border-b-2 border-gray-200"
 					initial={{ opacity: 0, y: 40 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{
@@ -104,6 +105,7 @@ const Footer = () => {
 					<div className="flex gap-x-2 lg:gap-x-5 items-center">
 						{social.map((item, index) => (
 							<Link
+								target="_blank"
 								key={index}
 								to={item.link}
 								className=" relative text-gray-600 border border-gray-300 p-3 rounded-full text-sm lg:text-xl 

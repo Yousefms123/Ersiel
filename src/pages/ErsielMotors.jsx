@@ -1,9 +1,9 @@
-import React, {  useRef } from "react";
+import React, { useRef } from "react";
 import HeroVedioDialog from "../components/HeroVedioDialog";
 import MotorThumbnail from "../assets/MotorThumbnail.png";
 import HeroServices from "../components/HeroServices";
 import HeroMotorService from "../assets/MotorService.png";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import MotorCard from "../components/MotorCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -171,18 +171,7 @@ const ErsielMotors = () => {
 	const soldOutNextRef = useRef(null);
 	const { t, i18n } = useTranslation();
 	const isRtl = i18n.dir() === "rtl";
-	// useEffect(() => {
-	// 	if (swiperRef.current && swiperRef.current.swiper) {
-	// 		const swiper = swiperRef.current.swiper;
-	// 		// أعد تعيين وحدات التحكم في التنقل
-	// 		swiper.params.navigation.prevEl = prevRef.current;
-	// 		swiper.params.navigation.nextEl = nextRef.current;
-	// 		// أعد تهيئة التنقل
-	// 		swiper.navigation.destroy();
-	// 		swiper.navigation.init();
-	// 		swiper.navigation.update();
-	// 	}
-	// }, [i18n.language]);
+
 	return (
 		<div>
 			<HeroServices
@@ -200,7 +189,12 @@ const ErsielMotors = () => {
 					textOnImage="Discover Ersiel Motors"
 				></HeroVedioDialog>
 				<SectionsTitle>
-					Available <span className="text-span">Korean</span> brand cars
+					<Trans
+						i18nKey="motorsTitles.KoreanTitle"
+						values={!isRtl ? { brand: "Korean" } : { brand: "الكورية" }}
+					>
+						Available <span className="text-span">Korean</span> brand cars
+					</Trans>
 				</SectionsTitle>
 				<div className="relative w-full ">
 					{/* الأزرار خارج Swiper */}
@@ -269,7 +263,12 @@ const ErsielMotors = () => {
 					</Swiper>
 				</div>
 				<SectionsTitle>
-					Available <span className="text-span">Foreign</span> brand cars
+					<Trans
+						i18nKey="motorsTitles.foreignTitle"
+						values={!isRtl ? { brand: "Foreign" } : { brand: "الأجنبية" }}
+					>
+						Available <span className="text-span">Foreign</span> brand cars
+					</Trans>
 				</SectionsTitle>
 				<div className="relative w-full ">
 					{/* الأزرار خارج Swiper */}
@@ -339,7 +338,10 @@ const ErsielMotors = () => {
 					</Swiper>
 				</div>
 				<SectionsTitle>
-					<span className="text-span">Solid out</span> Cars
+					<p className={`flex ${isRtl ? "flex-row-reverse" : "flex-row"} gap-x-2 `}>
+						<span className="text-span ">{t("motorsTitles.soldTitle.span")}</span>{" "}
+						{t("motorsTitles.soldTitle.text")}
+					</p>
 				</SectionsTitle>
 				<div className="relative w-full ">
 					{/* الأزرار خارج Swiper */}
