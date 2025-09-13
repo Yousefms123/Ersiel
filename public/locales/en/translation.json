@@ -101,14 +101,21 @@
 		},
 		"location": {
 			"title": "Location",
-			"hq": "Korea - mmmmm - qqqq",
-			"yemen": "Yamen - kkkkk - wwww"
+			"Korea": "16, Sinheung-ro 11-gil, Yongsan-gu, Seoul, South Korea"
 		},
 		"copyright": "Copyright "
 	},
 	"beautyTitles": {
 		"fTitle": "We have more than 1000 Beauty Korean brands",
 		"sTitle": "We offer Botox, fillers and skin booster products."
+	},
+	"motorsTitles": {
+		"KoreanTitle": "Available <1>{{brand}}</1> brand cars",
+		"foreignTitle": "Available <1>{{brand}}</1> brand cars",
+		"soldTitle": {
+			"span": "Sold Out",
+			"text": "Cars"
+		}
 	},
 	"note": "Note: We sell our products wholesale (B-B)."
 }

@@ -26,7 +26,7 @@ const Navbar = () => {
 			<div className="flex flex-wrap items-center justify-between mx-auto px-4 lg:px-12 py-4">
 				{/* Logo */}
 				<Link to={"/"} className="flex items-center">
-					<img src={Logo} className="h-8" alt="Logo" />
+					<img src={Logo} className="h-5" alt="Logo" />
 				</Link>
 
 				{/* أيقونة المنيو على الموبايل */}

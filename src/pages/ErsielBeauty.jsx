@@ -362,7 +362,7 @@ const ErsielBeauty = () => {
 					{t("note")}
 				</motion.p>
 				<motion.a
-					href="https://wa.me/970567319195"
+					href="https://wa.me/821096277360"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="flex items-center gap-2 bg-green-700 text-white px-6 py-3 rounded-md hover:bg-green-600 transition z-[2]"
