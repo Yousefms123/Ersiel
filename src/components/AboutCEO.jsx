@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import CEOimg from "../assets/CEOimg.png";
+import CEOimg from "../assets/AboutImg.png";
 import SectionsTitle from "../components/SectionsTitle";
 import { motion } from "motion/react";
 

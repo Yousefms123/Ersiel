@@ -20,6 +20,7 @@ const koreanCars = [
 		company: "Range Rover",
 		price: "54,730",
 		details: ["Gasoline", "24,865 km", "Auto"],
+		link: "https://www.instagram.com/",
 	},
 	{
 		image: "https://images.unsplash.com/photo-1620547316190-289b3899e010?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -27,6 +28,7 @@ const koreanCars = [
 		company: "BMW",
 		price: "62,400",
 		details: ["Diesel", "12,500 km", "Manual"],
+		link: "",
 	},
 	{
 		image: "https://images.unsplash.com/photo-1622551997608-400d763b0f64?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -34,6 +36,7 @@ const koreanCars = [
 		company: "Tesla",
 		price: "75,900",
 		details: ["Electric", "8,000 km", "Auto"],
+		link: "",
 	},
 	{
 		image: HeroMotorService,
@@ -41,6 +44,7 @@ const koreanCars = [
 		company: "Tesla",
 		price: "75,900",
 		details: ["Electric", "8,000 km", "Auto"],
+		link: "",
 	},
 	{
 		image: HeroMotorService,
@@ -48,6 +52,7 @@ const koreanCars = [
 		company: "Tesla",
 		price: "75,900",
 		details: ["Electric", "8,000 km", "Auto"],
+		link: "",
 	},
 ];
 const foreignCars = [
@@ -57,6 +62,7 @@ const foreignCars = [
 		company: "Porsche",
 		price: "120,000",
 		details: ["Gasoline", "28,457 km", "Auto"],
+		link: "",
 	},
 	{
 		image: "https://images.unsplash.com/photo-1555652736-e92021d28a10?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -64,6 +70,7 @@ const foreignCars = [
 		company: "Audi",
 		price: "150,000",
 		details: ["Gasoline", "30,775 km", "Auto"],
+		link: "",
 	},
 	{
 		image: "https://images.unsplash.com/photo-1626072557464-90403d788e8d?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -71,6 +78,7 @@ const foreignCars = [
 		company: "Toyota",
 		price: "75,000",
 		details: ["Diesel", "33,847 km", "Auto"],
+		link: "",
 	},
 	{
 		image: "https://images.unsplash.com/photo-1555652736-e92021d28a10?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -78,6 +86,7 @@ const foreignCars = [
 		company: "Audi",
 		price: "150,000",
 		details: ["Gasoline", "30,775 km", "Auto"],
+		link: "",
 	},
 	{
 		image: "https://images.unsplash.com/photo-1580274455191-1c62238fa333?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -85,6 +94,7 @@ const foreignCars = [
 		company: "Porsche",
 		price: "120,000",
 		details: ["Gasoline", "28,457 km", "Auto"],
+		link: "",
 	},
 ];
 const soldOutCars = [
@@ -95,6 +105,7 @@ const soldOutCars = [
 		company: "BMW",
 		price: "95,000",
 		details: ["Gasoline", "15,200 km", "Auto"],
+		link: "www.google.com",
 	},
 	{
 		image: "https://images.unsplash.com/photo-1652549423957-d9c4445ee9bf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -102,6 +113,7 @@ const soldOutCars = [
 		company: "Mercedes-Benz",
 		price: "58,500",
 		details: ["Hybrid", "9,800 km", "Auto"],
+		link: "",
 	},
 	{
 		image: "https://images.unsplash.com/photo-1517942491415-4fc176d3c2f7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -109,6 +121,7 @@ const soldOutCars = [
 		company: "Porsche",
 		price: "110,750",
 		details: ["Gasoline", "21,000 km", "Auto"],
+		link: "",
 	},
 
 	// --- سيارات يابانية ---
@@ -118,6 +131,7 @@ const soldOutCars = [
 		company: "Toyota",
 		price: "55,000",
 		details: ["Gasoline", "18,500 km", "Auto"],
+		link: "",
 	},
 	{
 		image: "https://images.unsplash.com/photo-1642078995682-9bf815ec79f8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -125,6 +139,7 @@ const soldOutCars = [
 		company: "Nissan",
 		price: "82,000",
 		details: ["Gasoline", "11,300 km", "Auto"],
+		link: "",
 	},
 	{
 		image: "https://images.unsplash.com/photo-1587735420291-4672e790db42?q=80&w=663&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -132,6 +147,7 @@ const soldOutCars = [
 		company: "Mazda",
 		price: "34,600",
 		details: ["Diesel", "25,000 km", "Auto"],
+		link: "",
 	},
 
 	// --- سيارات كورية ---
@@ -141,6 +157,7 @@ const soldOutCars = [
 		company: "Kia",
 		price: "51,800",
 		details: ["Gasoline", "29,500 km", "Auto"],
+		link: "",
 	},
 	{
 		image: "https://images.unsplash.com/photo-1660264596893-a687d0761fe9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -148,6 +165,7 @@ const soldOutCars = [
 		company: "Hyundai",
 		price: "49,500",
 		details: ["Gasoline", "14,000 km", "Auto"],
+		link: "",
 	},
 	{
 		image: "https://images.unsplash.com/photo-1704951547872-944a3b505b67?q=80&w=1177&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -155,6 +173,7 @@ const soldOutCars = [
 		company: "Genesis",
 		price: "68,000",
 		details: ["Diesel", "19,800 km", "Auto"],
+		link: "",
 	},
 ];
 
@@ -256,6 +275,7 @@ const ErsielMotors = () => {
 										brand={car.company}
 										price={car.price}
 										details={car.details}
+										link={car.link}
 									/>
 								</motion.div>
 							</SwiperSlide>
@@ -331,6 +351,7 @@ const ErsielMotors = () => {
 										brand={car.company}
 										price={car.price}
 										details={car.details}
+										link={car.link}
 									/>
 								</motion.div>
 							</SwiperSlide>
@@ -404,6 +425,7 @@ const ErsielMotors = () => {
 										brand={car.company}
 										price={car.price}
 										details={car.details}
+										link={car.link}
 									/>
 								</motion.div>
 							</SwiperSlide>

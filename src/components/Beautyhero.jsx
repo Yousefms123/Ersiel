@@ -11,9 +11,6 @@ import MotorsHero from "../assets/MotorsHero.png";
 import { useTranslation } from "react-i18next";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
-
-
-
 import { motion } from "motion/react";
 
 export default function HeroSection({ isRTL }) {
@@ -106,20 +103,22 @@ export default function HeroSection({ isRTL }) {
 												}`}
 											>
 												<button
-													className={`transform flex items-center gap-x-2 font-Raleway rounded-full ${
+													className={`transform  font-Raleway rounded-full ${
 														hero.sideImage
 															? "bg-button text-white"
 															: "text-button bg-white"
 													} px-6 py-3 font-semibold md:px-8 md:py-4`}
 												>
-													<span className="order-1">
-														{hero.button}
-													</span>
-													{!isRTL ? (
-														<ArrowRight className="order-2" />
-													) : (
-														<ArrowLeft />
-													)}
+													<a href="https://wa.me/821096277360" className="order-1 flex items-center gap-x-2" target="_blank">
+														<span className="">
+															{hero.button}
+														</span>
+														{!isRTL ? (
+															<ArrowRight className="order-2" />
+														) : (
+															<ArrowLeft />
+														)}
+													</a>
 												</button>
 											</motion.div>
 										</div>

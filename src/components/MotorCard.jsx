@@ -1,6 +1,9 @@
 import React from "react";
 import { Fuel, Gauge, Settings } from "lucide-react";
-const MotorCard = ({ cardImg, model, brand, price, details }) => {
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+const MotorCard = ({ cardImg, model, brand, price, details, link }) => {
+	const { t } = useTranslation();
 	const icons = [<Fuel size={20} />, <Gauge size={20} />, <Settings size={20} />];
 	return (
 		<div className="bg-white border border-gray-300 rounded-2xl overflow-hidden ">
@@ -31,7 +34,7 @@ const MotorCard = ({ cardImg, model, brand, price, details }) => {
 
 				{/* زر */}
 				<button className="mt-5 w-full rounded-full bg-span cursor-pointer text-white py-2 hover:bg-gray-700 transition">
-					View Details
+					<Link to={link}>{t('view_details')}</Link>
 				</button>
 			</div>
 		</div>
